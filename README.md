@@ -1,6 +1,17 @@
 # Fine-Grained-Cloth-Classification
 Beating Fine-Grained Cloth Classification benchmark using Fast.AI in 10 Lines of Code
 
+```
+from fastai import *
+from fastai.vision import *
+path = Path("data/cloth_categories/")
+data = ImageDataBunch.from_csv(path, csv_labels="train_labels.csv", ds_tfms=get_transforms(), size=224)
+data.normalize(imagenet_stats)
+learn = create_cnn(data, models.resnet34, metrics=accuracy)
+learn.fit_one_cycle(8)
+learn.save('stage-1_sz-150')
+```
+
 This is repo for my article
 
 https://medium.com/@pankajmathur/clothing-categories-classification-using-fast-ai-v1-0-in-10-lines-of-code-4e848797721
