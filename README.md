@@ -8,7 +8,7 @@ https://medium.com/@pankajmathur/clothing-categories-classification-using-fast-a
 Make Sure to follow article to do below steps, before trying this notebook.
 
 * Download dataset http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion.html
-* Installing & Setting up Fast.AI Libraries
+* Installing & Setting up Fast.AI Libraries https://github.com/fastai/fastai
 
 
 
