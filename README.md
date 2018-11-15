@@ -32,3 +32,10 @@ Huge Thanks to @Ziwei Liu, @Ping Luo, @Shi Qiu, @Xiaogang Wang, and @Xiaoou Tang
  month = June,
  year = {2016} 
  }
+
+UPDATE: Fast.ai libraries are in process of updating almost every few days with new features & bug fixes, At the time of writing this ReadMe.md, I am using fastai version 1.0.24, so please match your environment accordingly.
+
+```
+conda update --all
+conda install -c fastai fastai
+```
